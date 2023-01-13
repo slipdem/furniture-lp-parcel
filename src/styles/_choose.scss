@@ -1,0 +1,29 @@
+.section__choose {
+	padding: 25px 0 70px 0;
+}
+.choose {
+	display: flex;
+	justify-content: space-between;
+	&__item {
+	}
+	.left__item {
+		flex: 1 0 540px;
+	}
+	.right__item {
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+.why {
+	&__item {
+	}
+	&__icon {
+	}
+	&__title {
+	}
+	&__text {
+	}
+}

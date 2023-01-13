@@ -1,0 +1,106 @@
+.section {
+	&__hero {
+		position: relative;
+		width: 100%;
+		background-color: $colorMainGreen;
+		padding-top: 90px;
+		@media (max-width: $bp992) {
+			padding-top: 75px;
+		}
+		@media (max-width: $bp768) {
+			padding-top: 50px;
+		}
+
+		.hero__svg {
+			position: absolute;
+			right: 160px;
+			top: 95px;
+			z-index: 0;
+			@media (max-width: $bp992) {
+				right: 100px;
+				top: 20%;
+			}
+			@media (max-width: $bp768) {
+				top: 45%;
+				right: 5%;
+				max-width: 150px;
+				width: 100%;
+				height: auto;
+			}
+			@media (max-width: $bp480) {
+			}
+		}
+	}
+}
+
+// Hero
+.hero {
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: $bp992) {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	// .hero__title
+	&__title {
+		font-weight: 600;
+		font-size: 54px;
+		line-height: 65px;
+		color: $colorWhite;
+		text-align: left;
+		span {
+			display: block;
+		}
+		@media (max-width: $bp1200) {
+			font-size: 46px;
+			line-height: 1.3;
+		}
+		@media (max-width: $bp992) {
+			font-size: 42px;
+		}
+		@media (max-width: $bp768) {
+			font-size: 36px;
+		}
+	}
+	// .hero__item
+	&__item {
+		z-index: 2;
+		&.left__item {
+			flex: 1 0 420px;
+			@media (max-width: $bp992) {
+				flex: 1 0 100%;
+			}
+		}
+		&.right__item {
+		}
+	}
+	// .hero__buttons
+	&__buttons {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+		margin-top: 117px;
+		@media (max-width: $bp992) {
+			margin-top: 75px;
+		}
+		@media (max-width: $bp768) {
+			margin-top: 50px;
+		}
+		@media (max-width: $bp480) {
+			margin-top: 30px;
+			.hero__btn {
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				padding: 8px 0;
+			}
+		}
+	}
+	// .hero__image
+	&__image {
+		width: 100%;
+		height: auto;
+	}
+}
