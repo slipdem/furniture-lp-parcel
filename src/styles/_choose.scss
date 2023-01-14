@@ -11,6 +11,7 @@
 	&__item {
 	}
 	.left__item {
+		position: relative;
 		flex: 0 1 470px;
 		padding-top: 60px;
 		@media (max-width: $bp1200) {
@@ -24,9 +25,32 @@
 		.section__text {
 			max-width: 430px;
 		}
+		&::after {
+			content: '';
+			position: absolute;
+			width: 296px;
+			height: 307px;
+			top: 175px;
+			left: 316px;
+			background: rgba(53, 115, 110, 0.1);
+			border-radius: 20px;
+			@media (max-width: $bp992) {
+				display: none;
+			}
+		}
 	}
 	.right__item {
+		position: relative;
 		padding-top: 50px;
+		.yellow-dots-bg {
+			position: absolute;
+			top: -5px;
+			left: -84px;
+			z-index: -1;
+			@media (max-width: $bp480) {
+				display: none;
+			}
+		}
 		.why__image {
 			max-width: 100%;
 			width: 100%;
