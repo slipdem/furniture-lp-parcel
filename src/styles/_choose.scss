@@ -8,8 +8,6 @@
 	@media (max-width: $bp992) {
 		flex-wrap: wrap;
 	}
-	&__item {
-	}
 	.left__item {
 		position: relative;
 		flex: 0 1 470px;
@@ -21,7 +19,6 @@
 			flex: 0 1 100%;
 			padding-top: 0;
 		}
-
 		.section__text {
 			max-width: 430px;
 		}
@@ -61,7 +58,6 @@
 		@media (max-width: $bp992) {
 			padding-top: 30px;
 			display: flex;
-			// align-items: center;
 			justify-content: center;
 			width: 100%;
 			.why__image {
