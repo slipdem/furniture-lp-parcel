@@ -11,12 +11,13 @@
 
 	.navbar {
 		display: flex;
+		position: relative;
 		justify-content: space-between;
 		align-items: center;
 		padding: 24px 0;
-    @media (max-width: $bp768) {
-      padding: 18px 0;
-    }
+		@media (max-width: $bp768) {
+			padding: 18px 0;
+		}
 	}
 
 	.logo {
@@ -91,11 +92,13 @@
 			top: 0;
 			height: 100vh;
 			width: 100vw;
-			z-index: 2;
+			z-index: 17;
+			padding: 0;
+			margin: 0;
 			animation: fade 0.1s linear;
-      .menu__item-link {
-        opacity: 1;
-      }
+			.menu__item-link {
+				opacity: 1;
+			}
 		}
 	}
 }
@@ -112,7 +115,7 @@
 	pointer-events: initial;
 	height: 30px;
 	width: 30px;
-	z-index: 2;
+	z-index: 18;
 	@media screen and (max-width: $burgerBreakpoint) {
 		display: flex;
 	}
@@ -127,7 +130,7 @@
 			transform 0.2s linear;
 		background-color: $burgerColor;
 		width: 26px;
-    height: 2px;
+		height: 2px;
 
 		&::before,
 		&::after {
@@ -149,6 +152,9 @@
 		}
 	}
 	&.active {
+		position: fixed;
+		top: 33px;
+		left: 15px;
 		span {
 			background-color: transparent;
 			transition: background 0.2s ease-out;
@@ -161,11 +167,11 @@
 
 			&:before {
 				top: 0;
-				transform: rotate3d(0, 0, 1, -45deg);
+				transform: rotate(45deg);
 			}
-			&:before {
+			&:after {
 				top: 0;
-				transform: rotate3d(0, 0, 1, 45deg);
+				transform: rotate(-45deg);
 			}
 		}
 	}

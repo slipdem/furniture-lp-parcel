@@ -9,6 +9,10 @@ img {
 	margin: 0 auto;
 	padding: $containerSidePadding;
 }
+.main {
+	position: relative;
+	overflow: hidden;
+}
 
 .flex {
 	display: flex;

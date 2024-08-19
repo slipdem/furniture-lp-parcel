@@ -25,16 +25,41 @@
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./img/icons/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/icons/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./img/icons/favicon-16x16.png" />
+		<link
+			rel="manifest"
+			href="./site.webmanifest" />
 	</head>
 	<body class="main__body">
+		<div class="loader">
+			<div class="loader__title">furni<span>.</span></div>
+			<div class="loader__item loader__item-1"></div>
+			<div class="loader__item loader__item-2"></div>
+			<div class="loader__item loader__item-3"></div>
+		</div>
 		<main class="main">
 			<!-- Main Header -->
-			<header class="header">
+			<header
+				class="header"
+				id="home">
 				<div class="container">
 					<div class="navbar">
 						<div class="burger"><span></span></div>
 						<div class="logo">
-							<a href="#">
+							<a href="#home">
 								<svg
 									width="81"
 									height="26"
@@ -57,7 +82,7 @@
 									<a
 										class="menu__item-link"
 										data-scroll
-										href="#"
+										href="#home"
 										>Home</a
 									>
 								</li>
@@ -65,7 +90,7 @@
 									<a
 										class="menu__item-link"
 										data-scroll
-										href="#"
+										href="#materials"
 										>About Us</a
 									>
 								</li>
@@ -73,7 +98,7 @@
 									<a
 										class="menu__item-link"
 										data-scroll
-										href="#"
+										href="#choose"
 										>Services</a
 									>
 								</li>
@@ -81,7 +106,15 @@
 									<a
 										class="menu__item-link"
 										data-scroll
-										href="#"
+										href="#help"
+										>Design</a
+									>
+								</li>
+								<li class="menu__item">
+									<a
+										class="menu__item-link"
+										data-scroll
+										href="#blog"
 										>Blog</a
 									>
 								</li>
@@ -89,7 +122,7 @@
 									<a
 										class="menu__item-link"
 										data-scroll
-										href="#"
+										href="#subscribe"
 										>Contact Us</a
 									>
 								</li>
@@ -514,16 +547,17 @@
 					<div class="hero">
 						<div class="hero__item left__item">
 							<h1 class="hero__title">
-								<span>Modern Interior</span> <span>Design Studio</span>
+								<span class="title__row-1">Modern Interior</span>
+								<span class="title__row-2">Design Studio</span>
 							</h1>
 							<div class="hero__buttons">
 								<a
-									href="#"
+									href="#subscribe"
 									class="btn hero__btn btn__hero"
 									>Shop Now</a
 								>
 								<a
-									href="#"
+									href="#subscribe"
 									class="btn hero__btn btn__outline"
 									>Explore</a
 								>
@@ -541,14 +575,16 @@
 			<!-- /Section Hero -->
 
 			<!-- Section Materials -->
-			<section class="section__materials">
+			<section
+				class="section__materials"
+				id="materials">
 				<div class="container">
 					<div class="materials">
 						<div class="materials__item left__item">
-							<h2 class="section__title t__left">
+							<h2 class="section__title t__left materials__title">
 								Crafted with excellent material.
 							</h2>
-							<p class="section__text t__left">
+							<p class="section__text t__left materials__text">
 								Donec mattis porta eros, aliquet finibus risus interdum at.
 								Nulla vivethe as it was for us to know what was to be done.
 							</p>
@@ -600,7 +636,9 @@
 			</section>
 			<!-- /Section Materials -->
 			<!-- Section Choose -->
-			<section class="section__choose">
+			<section
+				class="section__choose"
+				id="choose">
 				<div class="container">
 					<div class="choose">
 						<div class="choose__item left__item">
@@ -1229,7 +1267,9 @@
 			</section>
 			<!-- /Section Choose -->
 			<!-- Section Help -->
-			<section class="section__help">
+			<section
+				class="section__help"
+				id="help">
 				<div class="container">
 					<div class="help flex">
 						<div class="help__item left__item">
@@ -1726,63 +1766,65 @@
 			<section class="section__testimonials">
 				<div class="container">
 					<h1 class="section__title">Testimonials</h1>
-					<div class="testimonials flex swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide testimonials__slide">
-								<p class="testimonials__text">
-									‘‘Donec nibh magna, interdum quis massa sed, rhoncus laoreet
-									quam. Mauris accumsan felis fermentum euismod egestas. Mauris
-									ante augue, cursus sit amet arcu a, maximus suscipit nibh.
-									Integer vel nibh tellus. Pellentesque in risus non dui
-									venenatis sollicitudin sed vitae diam. Fusce tincidunt nisl
-									mi, at molestie odio accumsan non. Pellentesque ma’’
-								</p>
-								<div class="testimonials__info flex">
-									<div class="testimonials__info-img">
-										<img
-											src="./img/person-1.jpg"
-											alt="User" />
+					<div class="slider__wrapper">
+						<div class="testimonials flex swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide testimonials__slide">
+									<p class="testimonials__text">
+										‘‘Donec nibh magna, interdum quis massa sed, rhoncus laoreet
+										quam. Mauris accumsan felis fermentum euismod egestas.
+										Mauris ante augue, cursus sit amet arcu a, maximus suscipit
+										nibh. Integer vel nibh tellus. Pellentesque in risus non dui
+										venenatis sollicitudin sed vitae diam. Fusce tincidunt nisl
+										mi, at molestie odio accumsan non. Pellentesque ma’’
+									</p>
+									<div class="testimonials__info flex">
+										<div class="testimonials__info-img">
+											<img
+												src="./img/person-1.jpg"
+												alt="User" />
+										</div>
+										<h3>Michelle Anna</h3>
+										<p>CEO, Co-Founder, XYZ Inc.</p>
 									</div>
-									<h3>Michelle Anna</h3>
-									<p>CEO, Co-Founder, XYZ Inc.</p>
+								</div>
+								<div class="swiper-slide testimonials__slide">
+									<p class="testimonials__text">
+										‘‘Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Repudiandae aliquid quia maxime qui explicabo nisi dolore
+										est totam, ipsum optio dolorem nobis tempore ab officia
+										earum quidem quas, reiciendis quibusdam?’’
+									</p>
+									<div class="testimonials__info flex">
+										<div class="testimonials__info-img">
+											<img
+												src="./img/person-1.jpg"
+												alt="User" />
+										</div>
+										<h3>Mike Tyson</h3>
+										<p>CEO, Co-Founder, XYZ Inc.</p>
+									</div>
+								</div>
+								<div class="swiper-slide testimonials__slide">
+									<p class="testimonials__text">
+										‘‘Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Repudiandae aliquid quia maxime qui explicabo nisi dolore
+										est totam, ipsum optio dolorem nobis tempore ab officia
+										earum quidem quas, reiciendis quibusdam?’’
+									</p>
+									<div class="testimonials__info flex">
+										<div class="testimonials__info-img">
+											<img
+												src="./img/person-1.jpg"
+												alt="User" />
+										</div>
+										<h3>Michelle Anna</h3>
+										<p>CEO, Co-Founder, XYZ Inc.</p>
+									</div>
 								</div>
 							</div>
-							<div class="swiper-slide testimonials__slide">
-								<p class="testimonials__text">
-									‘‘Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Repudiandae aliquid quia maxime qui explicabo nisi dolore est
-									totam, ipsum optio dolorem nobis tempore ab officia earum
-									quidem quas, reiciendis quibusdam?’’
-								</p>
-								<div class="testimonials__info flex">
-									<div class="testimonials__info-img">
-										<img
-											src="./img/person-1.jpg"
-											alt="User" />
-									</div>
-									<h3>Mike Tyson</h3>
-									<p>CEO, Co-Founder, XYZ Inc.</p>
-								</div>
-							</div>
-							<div class="swiper-slide testimonials__slide">
-								<p class="testimonials__text">
-									‘‘Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Repudiandae aliquid quia maxime qui explicabo nisi dolore est
-									totam, ipsum optio dolorem nobis tempore ab officia earum
-									quidem quas, reiciendis quibusdam?’’
-								</p>
-								<div class="testimonials__info flex">
-									<div class="testimonials__info-img">
-										<img
-											src="./img/person-1.jpg"
-											alt="User" />
-									</div>
-									<h3>Michelle Anna</h3>
-									<p>CEO, Co-Founder, XYZ Inc.</p>
-								</div>
-							</div>
+							<div class="testimonials__pagination swiper-pagination"></div>
 						</div>
-						<div class="testimonials__pagination swiper-pagination"></div>
 						<button
 							class="slider__btn slider__btn-prev swiper-button-prev"></button>
 						<button
@@ -1792,7 +1834,9 @@
 			</section>
 			<!-- Section /Testimonials -->
 			<!-- Blog Section -->
-			<section class="section__blog">
+			<section
+				class="section__blog"
+				id="blog">
 				<div class="container">
 					<div class="blog">
 						<div class="blog__heading flex">
@@ -1843,12 +1887,14 @@
 			</section>
 			<!-- /Blog Section -->
 			<!-- Footer -->
-			<footer class="footer">
+			<footer
+				class="footer"
+				id="subscribe">
 				<div class="container">
 					<div class="footer__subscribe">
 						<img
 							class="footer__sofa"
-							src="./img//sofa.png"
+							src="./img/sofa.png"
 							alt="Green Sofa" />
 						<div class="subscribe__heading flex">
 							<svg
@@ -1913,31 +1959,32 @@
 								place here, since this is
 							</p>
 							<ul class="footer__row-item footer__list">
-								<li><a href="#">About us</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact us</a></li>
+								<li><a href="#materials">About us</a></li>
+								<li><a href="#choose">Services</a></li>
+								<li><a href="#help">Design</a></li>
+								<li><a href="#blog">Blog</a></li>
+								<li><a href="#subscribe">Contact us</a></li>
 							</ul>
 							<ul class="footer__row-item footer__list">
-								<li><a href="#">Support</a></li>
-								<li><a href="#">Knowledge base</a></li>
-								<li><a href="#">Live chat</a></li>
+								<li><a href="#subscribe">Support</a></li>
+								<li><a href="#subscribe">Knowledge base</a></li>
+								<li><a href="#subscribe">Live chat</a></li>
 							</ul>
 							<ul class="footer__row-item footer__list">
-								<li><a href="#">Jobs</a></li>
-								<li><a href="#">Our team</a></li>
-								<li><a href="#">Leadership</a></li>
-								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#subscribe">Jobs</a></li>
+								<li><a href="#subscribe">Our team</a></li>
+								<li><a href="#subscribe">Leadership</a></li>
+								<li><a href="#subscribe">Privacy Policy</a></li>
 							</ul>
 							<ul class="footer__row-item footer__list">
-								<li><a href="#">Nordic Chair </a></li>
-								<li><a href="#"> Kruzo Aero </a></li>
-								<li><a href="#"> Ergonomic </a></li>
+								<li><a href="#subscribe">Nordic Chair</a></li>
+								<li><a href="#subscribe">Kruzo Aero</a></li>
+								<li><a href="#subscribe">Ergonomic</a></li>
 							</ul>
 						</div>
 
 						<nav class="footer__social">
-							<a href="#">
+							<a href="https://facebook.com/">
 								<svg
 									width="12"
 									height="19"
@@ -1959,7 +2006,7 @@
 									</defs>
 								</svg>
 							</a>
-							<a href="#">
+							<a href="https://instagram.com/">
 								<svg
 									width="16"
 									height="18"
@@ -1981,7 +2028,7 @@
 									</defs>
 								</svg>
 							</a>
-							<a href="#">
+							<a href="https://x.com/">
 								<svg
 									width="17"
 									height="17"
@@ -1993,7 +2040,7 @@
 										fill="black" />
 								</svg>
 							</a>
-							<a href="#">
+							<a href="https://linked.in/">
 								<svg
 									width="14"
 									height="16"
@@ -2009,11 +2056,11 @@
 
 						<div class="footer__copyright">
 							<div class="copyright">
-								Copyright 2022 degraft87@gmail.com. All Rights Reserved.
+								Copyright 2024 email@mail.com. All Rights Reserved.
 							</div>
 							<div class="copyright__links">
-								<a href="#">Terms & Conditions</a>
-								<a href="#">Privacy Policy</a>
+								<a href="#subscribe">Terms & Conditions</a>
+								<a href="#subscribe">Privacy Policy</a>
 							</div>
 						</div>
 					</div>
@@ -2021,10 +2068,14 @@
 			</footer>
 			<!-- /Footer -->
 		</main>
-
-		<script
-			type="module"
-			src="./index.js"></script>
 	</body>
+
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+	<script src="./lib/smooth-scroll.min.js"></script>
+	<script
+		type="module"
+		src="./index.js"></script>
+	<script src="./scripts/animations.js"></script>
 </html>
