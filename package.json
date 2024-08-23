@@ -14,5 +14,8 @@
 		"parcel": "^2.0.0",
 		"posthtml-include": "^1.7.4",
 		"rimraf": "^3.0.2"
+	},
+	"dependencies": {
+		"@parcel/transformer-webmanifest": "^2.12.0"
 	}
 }
