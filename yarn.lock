@@ -337,6 +337,14 @@
     globals "^13.2.0"
     nullthrows "^1.1.1"
 
+"@parcel/packager-raw-url@^2.12.0":
+  version "2.12.0"
+  resolved "https://registry.npmjs.org/@parcel/packager-raw-url/-/packager-raw-url-2.12.0.tgz"
+  integrity sha512-sH7cvLbotS+qknhQUCGfd9mslQr4KcanlZE5CgzM0uGn3SnyZoKznqHrbouzgnIP/LHgXKOKmMaNjPLtVe4rcA==
+  dependencies:
+    "@parcel/plugin" "2.12.0"
+    "@parcel/utils" "2.12.0"
+
 "@parcel/packager-raw@2.12.0":
   version "2.12.0"
   resolved "https://registry.npmjs.org/@parcel/packager-raw/-/packager-raw-2.12.0.tgz"
